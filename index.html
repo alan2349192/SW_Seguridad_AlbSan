@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        .navbar {
+            border: 2px solid purple;
+            border-radius: 5px;
+        }
+        .navbar-nav {
+            margin: auto;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        .nav-link {
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        .display-4 {
+            font-family: 'Cursive', sans-serif;
+        }
+        #backgroundImage {
+            background-image: url('images/index.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px; /* Ajusta el espacio desde la parte superior del contenedor */
+            color: white;
+            text-align: center;
+        }
+        .footer {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap; /* Para que los elementos se ajusten a la pantalla */
+            justify-content: space-between; /* Distribución uniforme de los elementos */
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        .descripcion, .proposito {
+            text-shadow: -1px  -1px 0 #ff36cd, 1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            width: 45%; /* Ancho de los cuadros de texto */
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: rgb(255, 255, 255);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; /* Espaciado superior */
+        }
+        h1{
+            color: #da01d7;
+            margin: 0.5rem 0;
+            text-shadow: -1px  -1px 0 #ff36cd, 1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            #backgroundImage {
+                padding-top: 50px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="Index.html" onclick="loadPage('index')">SEGURIDAD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="General_tips.html" onclick="loadPage('General_tips.html')">Tips Generales</a></li>
+                <li class="nav-item"><a class="nav-link" href="Password_Protection.html" onclick="loadPage('Password_Protection.html')">Protección de Contraseñas</a></li>
+                <li class="nav-item"><a class="nav-link" href="Socialmedia.html" onclick="loadPage('Social_Media.html')">Seguridad de Redes</a></li>
+                <li class="nav-item"><a class="nav-link" href="Malware_Protection.html" onclick="loadPage('Malware_Protection.html')">Protección contra Malware</a></li>
+                <li class="nav-item"><a class="nav-link" href="Recourses.html" onclick="loadPage('Recourses.html')">Recursos y Enlaces</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="backgroundImage">
+        <div class="container header text-center">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/Indexs.JPG" class="img-fluid">
+        </div>
+        <div class="col-8">
+            <h1 class="titulo">SEGURIDAD</h1>
+        </div>
+        <div class="col-2">
+            <img src="images/Indexs.JPG" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="proposito">
+        <h4>Propósito del Sitio</h4>
+        <p>El propósito de esta página es proporcionar información y recursos sobre cómo mantener la seguridad en diversos lugares, ya sea en el hogar, en el trabajo o en la comunidad.</p>
+        <p>Tomando en cuenta algunas acciones de como proteger la informacion personal basandose de aplicaciones que dañan los dispositivos 
+            como celulares, laptops, para evitar mal uso o problemas legales con el manejo no autorizado de la informacion.
+        </p>
+    </div>
+    <div class="descripcion">
+        <h4>Descripción</h4>
+        <p>Esta página trata sobre la seguridad en general, ofreciendo consejos prácticos, guías y noticias relacionadas con la seguridad personal, 
+            para evitar malos usus de nuestra informacion personal, como situaciones legales.</p>
+    </div>
+</div>
+<div>
+</div>
+
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

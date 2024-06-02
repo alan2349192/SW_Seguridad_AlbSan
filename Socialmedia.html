@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <style>
+        .navbar {
+            border: 2px solid purple;
+            border-radius: 5px;
+        }
+        .navbar-nav {
+            margin: auto;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Comic Sans MS',  sans-serif;
+        }
+        .nav-link {
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        .display-4 {
+            font-family: 'Cursive', sans-serif;
+        }
+        #backgroundImage {
+            background-image: url('images/seguridadred.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+        }
+        #externalContent {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #ffffff;
+        }
+        .font6 { 
+            font-family: 'Verdana', sans-serif;
+         }
+        .card {
+            background-color: rgba(255, 255, 255, 0.324);
+            border: 2px solid #ff6767;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(255, 255, 255, 0.993);
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            #backgroundImage {
+                padding-top: 50px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="Index.html" onclick="loadPage('index')">SEGURIDAD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="General_tips.html" onclick="loadPage('General_tips.html')">Tips Generales</a></li>
+                <li class="nav-item"><a class="nav-link" href="Password_Protection.html" onclick="loadPage('Password_Protection.html')">Protección de Contraseñas</a></li>
+                <li class="nav-item"><a class="nav-link" href="Socialmedia.html" onclick="loadPage('Social_Media.html')">Seguridad de Redes</a></li>
+                <li class="nav-item"><a class="nav-link" href="Malware_Protection.html" onclick="loadPage('Malware_Protection.html')">Protección contra Malware</a></li>
+                <li class="nav-item"><a class="nav-link" href="Recourses.html" onclick="loadPage('Recourses.html')">Recursos y Enlaces</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="backgroundImage">
+        <div class="container">
+            <center>
+                <h1 class="font6">Seguridad en Redes Sociales</h1>
+                <p class="lead font6">Consejos para proteger tu privacidad y seguridad en las redes sociales</p>
+            </center>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-4 mb-4 font6">
+                        <h2 class="text-center mb-4 font6">Revisa tu configuración de privacidad</h2>
+                        <p class="font6">Las redes sociales ofrecen diversas opciones de configuración de privacidad. Asegúrate de revisar y ajustar estas configuraciones para controlar quién puede ver tu información y publicaciones.</p>
+                        <center><img src="images/pag3.JPG"  alt="Revisa tu configuración de privacidad"></center>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4 mb-4">
+                        <h2 class="text-center mb-4 font6">Cuidado con las solicitudes de amistad y mensajes de desconocidos</h2>
+                        <p class="font6">No aceptes solicitudes de amistad ni mensajes de personas que no conoces en la vida real. Podrían ser estafadores o personas malintencionadas que intentan obtener acceso a tu información personal.</p>
+                        <center><img src="images/pag31.JPG"  alt="Cuidado con las solicitudes de amistad y mensajes de desconocidos"></center>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <h2 class="text-center mb-4 font6 ">No compartas información sensible públicamente</h2>
+                        <p class="font6">Evita publicar información personal sensible, como tu dirección, número de teléfono o detalles financieros, en tus perfiles de redes sociales. Esta información podría ser utilizada por delincuentes cibernéticos.</p>
+                        <center><img src="images/pag32.JPG"  alt="No compartas información sensible públicamente"></center>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <h2 class="text-center mb-4 font6">Utiliza contraseñas seguras y habilita la autenticación de dos factores</h2>
+                        <p class="font6">Protege tu cuenta con contraseñas fuertes y únicas, y habilita la autenticación de dos factores siempre que sea posible. Esto proporciona una capa adicional de seguridad al requerir un segundo método de verificación.</p>
+                        <center><img src="images/pag33.JPG"  alt="Utiliza contraseñas seguras y habilita la autenticación de dos factores"></center>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                &copy; 2024 Alan Alberto Sánchez
+            </footer>
+        </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
